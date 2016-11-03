@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Тест</title>
+		<!-- Поддержка html5 <IE9 -->
+            <!--[if lt IE 9]>
+           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Основная таблица стилей -->
+        <link href="css/design.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <!-- Main wrapper -->
+  <main class="main-wrapper">
+    <!-- Создание новой заметки -->
+     <section id="newNote">
+	     <h1>Новая заметка</h1>
+		 <p><input placeholder='Название' type='text' id='note-name'></p>
+		 <div class='note-input-wrapper'><div id='tagsHighlight' disabled='disabled'></div><textarea placeholder='Текст' id='note-input'></textarea></div>
+		 <input id='save-button' type='button' value='Сохранить'>
+	 </section>
+	 <!-- Блок вывода существующих заметок и тэгов -->
+	 <section>
+	     <h1>Заметки</h1>
+	     <strong>Сортировать по тэгу:</strong>
+	     <!-- Тэги -->
+		 <div id='tags-wrapper'>
+	     </div>
+		 <!-- Каталог заметок -->
+	     <div id='notesCat'>
+	     </div>
+	 </section>
+  </main>
+  <!-- Модальное окно для просмотра заметки -->
+  <div id='modal-layer'>
+    <div id='modal-wrapper'>
+	</div>
+  </div>
+  <script type='text/javascript' src="js/scripts.js"></script>
+</body>
+</html>
